@@ -1,0 +1,133 @@
+Assignment 4.1
+
+Ques 1. Histogram for all variables in dataset mtcars. Write a prg. to create histogram for all columns.
+ # Histogram for mpg
+ library(ggplot2)
+        qplot(mtcars$mpg,
+        geom="histogram",
+        binwidth = 1.0,  
+        main = "Histogram for mpg", 
+        xlab = "mpg",  
+        fill=I("blue"), 
+        col=I("red"), 
+        alpha=I(.2),
+        xlim=c(20,50))
+
+ #Histogram for cyl
+ qplot(mtcars$cyl,
+      geom="histogram",
+      binwidth = 0.5,  
+      main = "Histogram for cyl", 
+      xlab = "cyl",  
+      fill=I("blue"), 
+      col=I("red"),
+      alpha=I(.2),
+      xlim=c(20,50))
+
+#Histogram for disp
+qplot(mtcars$disp,
+      geom="histogram",
+      binwidth = 0.5,  
+      main = "Histogram for disp", 
+      xlab = "mpg",  
+      fill=I("Royal Blue"), 
+      col=I("Red"),
+      alpha=I(.2),
+      xlim=c(20,50))
+
+#Histogram for hp
+qplot(mtcars$hp,
+      geom="histogram",
+      binwidth = 0.5,  
+      main = "Histogram for hp", 
+      xlab = "mpg",  
+      fill=I("Royal Blue"), 
+      col=I("Red"),
+      alpha=I(.2),
+      xlim=c(20,50))
+
+#Histogram for drat
+qplot(mtcars$drat,
+   geom="histogram",
+   binwidth = 0.5,  
+   main = "Histogram for drat", 
+   xlab = "drat",  
+   fill=I("Royal Blue"), 
+   col=I("Red"),
+   alpha=I(.2),
+   xlim=c(20,50))
+
+
+#Histogram for wt
+qplot(mtcars$wt,
+      geom="histogram",
+      binwidth = 0.5,  
+      main = "Histogram for wt", 
+      xlab = "wt",  
+      fill=I("Royal Blue"), 
+      col=I("Red"),
+      alpha=I(.2),
+      xlim=c(20,50))
+
+#Histogram for qsec
+qplot(mtcars$qsec,
+      geom="histogram",
+      binwidth = 0.5,  
+      main = "Histogram for qsec", 
+      xlab = "qsec",  
+      fill=I("Royal Blue"), 
+      col=I("Red"),
+      alpha=I(.2),
+      xlim=c(20,50))
+
+
+#Histogram for vs
+qplot(mtcars$vs,
+      geom="histogram",
+      binwidth = 0.5,  
+      main = "Histogram for vs", 
+      xlab = "vs",  
+      fill=I("Royal Blue"), 
+      col=I("Red"),
+      alpha=I(.2),
+      xlim=c(20,50))
+
+
+#Histogram for am
+qplot(mtcars$am,
+      geom="histogram",
+      binwidth = 0.5,  
+      main = "Histogram for am", 
+      xlab = "am",  
+      fill=I("Royal Blue"), 
+      col=I("Red"),
+      alpha=I(.2),
+      xlim=c(20,50))
+
+
+#Histogram for gear
+qplot(mtcars$gear,
+      geom="histogram",
+      binwidth = 0.5,  
+      main = "Histogram for gear", 
+      xlab = "gear",  
+      fill=I("Royal Blue"), 
+      col=I("Red"),
+      alpha=I(.2),
+      xlim=c(20,50))
+
+
+#Histogram for carb
+qplot(mtcars$carb,
+      geom="histogram",
+      binwidth = 0.5,  
+      main = "Histogram for carb", 
+      xlab = "carb",  
+      fill=I("Royal Blue"), 
+      col=I("Red"),
+      alpha=I(.2),
+      xlim=c(20,50))
+
+Ques2. Check the probability distributions of all variables in mtcars.
+
+Ques3. Write a prg. to create boxplot for all variables
